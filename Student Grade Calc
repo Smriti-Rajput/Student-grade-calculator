@@ -1,0 +1,59 @@
+#STUDENTS GRADE CALCULATOR 
+#INPUT WE WILL GIVE NAME, ROLL NO. , MARKS IN VARIOUS SUB
+#OUTPUT WE WILL GET SCORE AS Total, average, percentage, grade, pass/fail
+
+print("========================================")
+print("           STUDENT RESULT")
+print("========================================")
+
+
+Name = input("Student's Name:")
+Rollno = input("Student's Rollno:")
+
+
+# ENter  various subjects names
+Subject1 = input("Subject1 :")
+Subject2 = input(" Subject2 :")
+Subject3 = input("Subject3 :")
+subject4 = input(" subject4:")
+Subject5 = input(" Subject5:")
+                 
+
+
+# ENter marks in various subjects
+Subject1 = float(input(f"Marks obtained in {Subject1}:"))
+Subject2 = float(input(f"Marks obtained in {Subject2} :"))
+Subject3 = float(input(f"Marks obtained in {Subject3} :"))
+subject4 = float(input(f"Marks obtained in {subject4}:"))
+Subject5 = float(input(f"Marks obtained in {Subject5}:"))
+                 
+TotalMarks  = Subject1+ Subject2+Subject3+subject4+Subject5
+
+print ("Total Marks obtained out of 500 :" , Subject1+Subject2+Subject3+subject4+Subject5)
+print("Average :" , (TotalMarks)/5)
+print("Percentage:" , (TotalMarks /500) * 100)
+
+if(TotalMarks>=450):
+    print("Grade : A")
+elif(TotalMarks>=450):
+    print("Grade : B")
+elif(TotalMarks>=400):
+    print("Grade : C")
+elif(TotalMarks>=350):
+    print("Grade : D")
+elif(TotalMarks>=300):
+    print("Grade : E")
+else:
+    print("Grade : F")
+
+
+if(TotalMarks>200):
+    print("PASS")
+else:
+    print("FAIL")
+
+    
+
+
+
+
